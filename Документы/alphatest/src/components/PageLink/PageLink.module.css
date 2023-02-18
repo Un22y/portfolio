@@ -1,0 +1,20 @@
+.pagelink {
+    background-color: rgba(0, 140, 140, 0.996);
+    border: none;
+    border-radius: 40%;
+    transition: .2s;
+    color: white;
+}
+
+.pagelink.pagelink_current {
+    background-color: violet;
+}
+
+.pagelink:hover {
+    transform: scale(1.05);
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+}

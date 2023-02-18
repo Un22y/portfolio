@@ -1,0 +1,72 @@
+.character_box {
+    max-width: max-content;
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(0, 128, 128);
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.character_box.favorite {
+    border: 3px solid rgb(226, 64, 128);
+}
+
+.character_info_box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: rgba(255, 255, 255);
+    color: rgba(0, 0, 0, 1);
+
+    opacity: 0;
+    transition: .2s ease-in;
+}
+
+.favorite .character_info_box {
+    background: rgba(226, 64, 128);
+    color: rgba(0, 255, 255, 1);
+}
+
+.character_box:hover .character_info_box {
+    opacity: .6;
+}
+
+.character_box:hover .favorite_button {
+    opacity: 1;
+}
+
+.favorite_button path {
+    transition: .5s;
+}
+
+.favorite_button:hover path, .character_box_favorite path {
+    fill: red;
+}
+
+.favorite_button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    align-self: flex-end;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .2s ease-in;
+}
+
+.favorite_button:hover {
+    transform: scale(1.3);
+}
+
+.like_box {
+    max-width: 20px;
+    max-height: 20px;
+}

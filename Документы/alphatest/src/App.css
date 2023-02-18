@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 10px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-enter {
+  transform: translateX(-100%);
+}
+.list-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s all;
+}
+.list-exit {
+  opacity: .5;
+  transition: 1s all;
+}
+.list-exit-active {
+  opacity: 0;
+}
+
+.preloader-enter {
+  opacity: 0;
+}
+
+.preloader-enter-active {
+  opacity: 1;
+}
+
+.preloader-exit {
+  opacity: 1;
+}
+
+.preloader-exit-active {
+  opacity: 0;
+}

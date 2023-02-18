@@ -1,0 +1,25 @@
+.navbuttons_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbutton_button {
+    padding: 10px 15px;
+    background:  rgba(0, 140, 140, 0.996);
+    border: 2px solid rgb(0, 128, 128);
+    box-shadow: 3px teal;
+    border-radius: 20px;
+    color: white;
+    transition: .3s;
+}
+
+.navbutton_button:disabled {
+    opacity: .3;
+}
+
+.navbutton_button:hover {
+    background-color: rgb(0, 87, 87);
+}
+
